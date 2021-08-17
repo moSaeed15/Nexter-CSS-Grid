@@ -9,11 +9,25 @@
   justify-items: center;
   row-gap: 2rem;
 
+  @media only screen and (max-width: $bp-md) {
+    grid-column: 1/-1;
+  }
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     column-gap: 2rem;
     row-gap: 5vh;
+
+    @media only screen and (max-width: $bp-md) {
+      grid-template-columns: repeat(
+        3,
+        min-content max-content
+      ); //this will make 6 columns
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: min-content max-content;
+    }
   }
   &__img {
     width: 7rem;
