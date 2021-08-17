@@ -455,7 +455,7 @@ body {
     -ms-grid-column: 4;
     -ms-grid-column-span: 3;
     grid-column: 4 / 7;
-    width: 200%;
+    width: 100%;
   }
 }
 
